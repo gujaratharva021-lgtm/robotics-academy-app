@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1094342965592",
+    "project_id": "robotics-academy-app-2026",
+    "storage_bucket": "robotics-academy-app-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094342965592:android:2e661ce6e5cbf712dc8d2d",
+        "android_client_info": {
+          "package_name": "com.roboticsacademy.robotics_academy_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCh3_irkJmhDPKYvS7QbK5_K10VHKV58g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

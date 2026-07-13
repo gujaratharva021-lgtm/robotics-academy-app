@@ -1,0 +1,45 @@
+﻿name: robotics_academy_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  http: ^1.2.1
+  firebase_core: ^4.11.0
+  firebase_auth: ^6.5.4
+  cloud_firestore: ^6.6.0
+  firebase_messaging: ^16.4.1
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+  url_launcher: ^6.3.1
+  pdf: ^3.11.1
+  printing: ^5.13.4
+  image_picker: ^1.1.2
+  image: ^4.3.0
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.2.0
+  razorpay_flutter: ^1.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.3
+
+flutter:
+  uses-material-design: true
+
+flutter_native_splash:
+  color: "#0D1226"
+  android: true
+  ios: true
