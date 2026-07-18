@@ -1,4 +1,4 @@
-﻿import 'dart:convert';
+import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 import 'firestore_service.dart';
@@ -6,8 +6,8 @@ import 'firestore_service.dart';
 class PaymentService {
   static const String _backendUrl = 'https://ai-tutor-backend.atharv-robotics.workers.dev';
 
-  static const int monthlyPriceInPaise = 9900; // ₹99
-  static const int yearlyPriceInPaise = 79900; // ₹799
+  static const int monthlyPriceInPaise = 9900; // ?99
+  static const int yearlyPriceInPaise = 79900; // ?799
 
   static const String razorpayKeyId = 'rzp_test_TAANwmGF7Byn8W';
 
@@ -53,7 +53,7 @@ class PaymentService {
         'key': razorpayKeyId,
         'amount': amount,
         'currency': 'INR',
-        'name': 'AI Robotics & Automation Academy',
+        'name': 'One Robotics Ai',
         'description': plan == 'yearly' ? 'Yearly Premium Subscription' : 'Monthly Premium Subscription',
         'order_id': orderData['id'],
         'prefill': {'contact': '', 'email': ''},

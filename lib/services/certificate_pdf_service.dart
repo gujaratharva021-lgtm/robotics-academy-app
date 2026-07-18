@@ -80,7 +80,7 @@ class CertificatePdfService {
                   ),
                   pw.SizedBox(height: 6),
                   pw.Text(
-                    'AI Robotics & Automation Academy',
+                    'One Robotics Ai',
                     style: pw.TextStyle(fontSize: 11, color: PdfColor.fromInt(0xFF666666)),
                   ),
                   pw.SizedBox(height: 40),
@@ -92,7 +92,7 @@ class CertificatePdfService {
                         children: [
                           pw.Container(width: 140, height: 1, color: _gold),
                           pw.SizedBox(height: 4),
-                          pw.Text('AI Robotics Academy', style: pw.TextStyle(fontSize: 10, color: _darkText)),
+                          pw.Text('One Robotics Ai', style: pw.TextStyle(fontSize: 10, color: _darkText)),
                         ],
                       ),
                       pw.Column(

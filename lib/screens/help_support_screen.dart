@@ -32,7 +32,7 @@ class HelpSupportScreen extends StatelessWidget {
     final uri = Uri(
       scheme: 'mailto',
       path: 'gujaratharva021@gmail.com',
-      query: 'subject=Robotics Academy App - Support Request',
+      query: 'subject=One Robotics Ai - Support Request',
     );
     if (!await launchUrl(uri)) {
       if (context.mounted) {

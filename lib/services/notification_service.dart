@@ -23,15 +23,11 @@ class NotificationService {
 
   /// Call this once when the app starts (e.g. in main.dart after Firebase.initializeApp())
   static Future<void> init() async {
-    // Required for scheduled (zoned) notifications
     tz_data.initializeTimeZones();
 
-    // Ask the user for permission to send notifications
-    await _messaging.requestPermission(
-      alert: true,
-      badge: true,
-      sound: true,
-    );
+    try {
+      await _messaging.requestPermission(alert: true, badge: true, sound: true);
+    } catch (_) {}
 
     // Set up local notifications
     const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
@@ -53,13 +49,14 @@ class NotificationService {
     // Show a local notification whenever a push notification arrives in foreground
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       _showLocalNotification(
-        message.notification?.title ?? 'Robotics Academy',
+        message.notification?.title ?? 'One Robotics Ai',
         message.notification?.body ?? '',
       );
     });
 
-    // Subscribe to the broadcast topic
-    await _messaging.subscribeToTopic(_allUsersTopic);
+    try {
+      await _messaging.subscribeToTopic(_allUsersTopic);
+    } catch (_) {}
 
     // Schedule the recurring "every 5 hours" motivational reminders
     await _scheduleMotivationalReminders();
