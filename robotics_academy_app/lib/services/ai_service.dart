@@ -9,7 +9,7 @@ import 'package:http/http.dart' as http;
 const String kAnthropicApiKey = 'YOUR_API_KEY_HERE';
 
 const String _systemPrompt =
-    "You are the AI Tutor inside 'AI Robotics & Automation Academy', a learning app "
+    "You are the AI Tutor inside 'One Robotics Ai', a learning app "
     "for robotics, AI/ML, IoT, PLC & automation, and 3D printing. Answer clearly and "
     "concisely (2-5 short paragraphs or bullet points max) in a friendly, encouraging "
     "teacher tone suited to students from school to professional level. Use simple "

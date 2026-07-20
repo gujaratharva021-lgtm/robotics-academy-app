@@ -3,16 +3,16 @@ import 'theme/app_theme.dart';
 import 'screens/splash_screen.dart';
 
 void main() {
-  runApp(const RoboticsAcademyApp());
+  runApp(const OneRoboticsAiApp());
 }
 
-class RoboticsAcademyApp extends StatelessWidget {
-  const RoboticsAcademyApp({super.key});
+class OneRoboticsAiApp extends StatelessWidget {
+  const OneRoboticsAiApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'AI Robotics & Automation Academy',
+      title: 'One Robotics Ai',
       debugShowCheckedModeBanner: false,
       theme: buildAppTheme(),
       home: const SplashScreen(),

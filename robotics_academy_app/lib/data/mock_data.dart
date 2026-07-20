@@ -5,10 +5,10 @@ import '../theme/app_theme.dart';
 final List<Course> kCourses = [
   Course(
     id: 'c1',
-    title: 'Robotics Basics',
-    subtitle: 'Introduction to Robotics & Automation',
+    title: 'One Robotics Ai Basics',
+    subtitle: 'Introduction to One Robotics Ai & Automation',
     level: 'Beginner',
-    category: 'Robotics',
+    category: 'One Robotics Ai',
     rating: 4.8,
     students: '1.2k',
     progress: 68,
@@ -90,14 +90,14 @@ final List<Course> kCourses = [
 ];
 
 final List<CourseCategory> kCategories = [
-  const CourseCategory(name: 'Robotics', icon: Icons.precision_manufacturing_outlined, color: AppColors.purple),
+  const CourseCategory(name: 'One Robotics Ai', icon: Icons.precision_manufacturing_outlined, color: AppColors.purple),
   const CourseCategory(name: 'AI & ML', icon: Icons.smart_toy_outlined, color: AppColors.blue),
   const CourseCategory(name: 'PLC & SCADA', icon: Icons.memory_outlined, color: AppColors.cyan),
   const CourseCategory(name: 'IoT & Sensors', icon: Icons.sensors_outlined, color: AppColors.green),
 ];
 
 final List<Certificate> kCertificates = [
-  const Certificate(title: 'Robotics Basics', date: '20 May 2024', color: AppColors.purple),
+  const Certificate(title: 'One Robotics Ai Basics', date: '20 May 2024', color: AppColors.purple),
   const Certificate(title: 'AI for Everyone', date: '10 May 2024', color: AppColors.blue),
   const Certificate(title: 'PLC & SCADA Basics', date: '05 May 2024', color: AppColors.cyan),
 ];
